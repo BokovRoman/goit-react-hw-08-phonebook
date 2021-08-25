@@ -1,0 +1,6 @@
+@import "styles/shared";
+
+.user-menu {
+  @extend %button;
+  padding: 5px 15px;
+}

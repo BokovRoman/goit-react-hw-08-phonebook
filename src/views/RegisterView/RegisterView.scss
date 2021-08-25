@@ -1,0 +1,16 @@
+@import "styles/shared";
+
+.register__button {
+  @extend %button;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.register__form {
+  @extend %form;
+}
+
+.register__alert {
+  @extend %alert;
+}

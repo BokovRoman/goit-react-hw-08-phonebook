@@ -1,0 +1,18 @@
+.contacts {
+  &-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__add-container {
+    width: 300px;
+  }
+
+  &__list-container {
+    width: 450px;
+  }
+
+  &__add-hint {
+    margin-bottom: 10px;
+  }
+}

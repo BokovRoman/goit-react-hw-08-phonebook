@@ -1,8 +1,6 @@
 import axios from 'axios';
 import * as actions from './contacts-actions';
 
-axios.defaults.baseURL = 'http://localhost:8888/';
-
 export const fetchContactsRequest = () => async dispatch => {
   dispatch(actions.fetchContactsRequest());
 
@@ -11,7 +9,7 @@ export const fetchContactsRequest = () => async dispatch => {
 
     dispatch(actions.fetchContactsSuccess(data));
   } catch (error) {
-    dispatch(actions.removeContactError(error));
+    dispatch(actions.removeContactError(error.message));
   }
 
   //   axios
@@ -29,7 +27,7 @@ export const addContact = (name, number) => async dispatch => {
     const { data } = await axios.post('/contacts', contact);
     dispatch(actions.addContactSuccess(data));
   } catch (error) {
-    dispatch(actions.addContactError(error));
+    dispatch(actions.addContactError(error.message));
   }
 
   //   axios
@@ -48,7 +46,7 @@ export const removeContact = id => async dispatch => {
       dispatch(actions.removeContactSuccess(id));
     }
   } catch (error) {
-    dispatch(actions.removeContactError(error));
+    dispatch(actions.removeContactError(error.message));
   }
 
   //   axios

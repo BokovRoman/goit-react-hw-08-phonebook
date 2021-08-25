@@ -1,0 +1,37 @@
+@import "styles/shared";
+
+.login__button {
+  @extend %button;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login__form {
+  @extend %form;
+}
+
+.login__alert {
+  @extend %alert;
+}
+
+.login__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login__link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 250ms $timing-function;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
