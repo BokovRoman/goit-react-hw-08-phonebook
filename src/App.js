@@ -3,14 +3,14 @@ import { Suspense, lazy } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import Loader from './components/Loader';
-import Section from './components/Section';
-import AppBar from './components/AppBar';
+import Loader from './components/Loader/Loader';
+import Section from './components/Section/Section';
+import AppBar from './components/AppBar/AppBar';
 import routes from './routes';
 import { getIsLoading } from './redux/common/common-selectors';
 import { getCurrentUser } from './redux/auth/auth-operations';
-import PrivateRoute from './components/PrivateRoute';
-import PublicRoute from './components/PublicRoute';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import PublicRoute from './components/PublicRoute/PublicRoute';
 
 const HomeView = lazy(() =>
   import('./views/HomeView/HomeView' /* webpackChunkName: "home-page" */),

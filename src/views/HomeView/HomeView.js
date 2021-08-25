@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './HomeView.scss';
 import routes from '../../routes';
-import Section from '../../components/Section';
+import Section from '../../components/Section/Section';
 
 const fadeInDownBigAnimation = keyframes`${fadeInDownBig}`;
 const BouncyDiv = styled.div`
