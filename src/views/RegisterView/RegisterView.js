@@ -11,8 +11,8 @@ import Form from 'react-bootstrap/Form';
 import './RegisterView.scss';
 
 import { register, removeError } from '../../redux/auth/auth-operations';
-import { getIsError } from 'redux/auth/auth-selectors';
-import Section from '../../components/Section';
+import { getIsError } from '../../redux/auth/auth-selectors';
+import Section from '../../components/Section/Section';
 import fadeTransition from '../../styles/transition/fade.module.css';
 
 class RegisterView extends Component {

@@ -1,13 +1,13 @@
-@import "styles/shared";
-@import "~bootstrap/scss/bootstrap";
+// @import "styles/shared";
+// @import "~bootstrap/scss/bootstrap";
 
 body {
   margin: 0;
-  background-color: $white;
-  color: $main-color;
+  background-color: fff;
+  // color: $main-color;
   line-height: 1.5;
-  font-family: $primary-font-stack;
-  background-image: url(../images/bg.png);
+  // font-family: $primary-font-stack;
+  // background-image: url(../images/bg.png);
   background-size: cover;
 }
 

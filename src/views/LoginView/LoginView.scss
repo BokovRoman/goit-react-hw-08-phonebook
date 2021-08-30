@@ -1,7 +1,7 @@
-@import "styles/shared";
+// @import "styles/shared";
 
 .login__button {
-  @extend %button;
+  // @extend %button;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -10,11 +10,11 @@
 }
 
 .login__form {
-  @extend %form;
+  // @extend %form;
 }
 
 .login__alert {
-  @extend %alert;
+  // @extend %alert;
 }
 
 .login__wrapper {
@@ -29,9 +29,9 @@
 .login__link {
   text-decoration: none;
   color: inherit;
-  transition: color 250ms $timing-function;
+  // transition: color 250ms $timing-function;
 
   &:hover {
-    color: $accent-color;
+    // color: $accent-color;
   }
 }
